@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        font-family: google sans;
+      }
+      body {
+        background-color: rgb(137, 71, 243);
+        color: white;
+        margin-left: 40px;
+      }
+      h3 {
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+      .details,
+      .payment {
+        width: 450px;
+        /* text-align: center; */
+        background-color: white;
+        color: black;
+        border-radius: 6px;
+        padding: 15px;
+      }
+      input,
+      textarea,
+      select {
+        border: hidden;
+        width: 300px;
+        border-radius: 4px;
+        background-color: rgb(224, 222, 222);
+        padding: 5px;
+      }
+      @media only screen and (max-width: 600px) {
+        body {
+          margin-left: 5%;
+        }
+        .details,
+        .payment {
+          width: 90%;
+        }
+        input,
+        textarea,
+        select {
+          width: 95%;
+          text-align: center;
+        }
+        h3,
+        h1 {
+          text-align: center;
+        }
+      }
+    </style>
+    <title>Payment Form</title>
+  </head>
+  <body>
+    <h1>Payment Form</h1>
+    <div class="details">
+      <h3>Contact Info</h3>
+      <label for="name">Name :</label>
+      <input type="text" name="" id="name" />
+      <br /><br />
+      <label for="gender">Gender :</label>
+      <select name="gender" id="gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+      <br /><br />
+      <label for="adress">Adress :</label>
+      <textarea name="adress" id="adress" cols="30" rows="2"></textarea>
+      <br /><br />
+      <label for="email">Email :</label>
+      <input type="email" name="email" id="email" />
+      <br /><br />
+      <label for="pincode">Pin Code :</label>
+      <input type="number" name="pincode" id="pincode" />
+    </div>
+    <br />
+    <div class="payment">
+      <h3>Payment Info</h3>
+      <label for="cardtype">Card Type :</label>
+      <select name="cardtype" id="cardtype">
+        <option value="visa">Visa</option>
+        <option value="mastercard">MasterCard</option>
+        <option value="rupay">Rupay</option></select
+      ><br /><br />
+      <label for="cardno">Card No :</label>
+      <input type="number" name="cardno" id="cardno" />
+      <br /><br />
+      <label for="exp">Expiration Date :</label>
+      <input type="date" name="exp" id="exp" />
+      <br /><br />
+      <label for="cvv">CVV :</label>
+      <input type="password" name="cvv" id="cvv" />
+    </div>
+    <br />
+    <input
+      type="submit"
+      value="Pay Now"
+      style="
+        height: 35px;
+        width: 80px;
+        background-color: rgb(253, 253, 253);
+        border: hidden;
+        border-radius: 6px;
+        font-weight: bold;
+      "
+    />
+  </body>
+</html>
