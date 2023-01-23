@@ -12,7 +12,7 @@
     }
 
     body {
-      height: 100vh;
+      /* height: 100vh; */
       /* background: linear-gradient(#b91ee9, #1624a0); */
       background-color: blueviolet;
       color: white;
@@ -57,7 +57,7 @@
     input[type="submit"] {
       height: 45px;
       width: 300px;
-      margin-top: 20px;
+      margin: 20px;
       background-color: rgb(247, 238, 255);
       color: black;
       border: none;
@@ -69,7 +69,39 @@
     }
 
     #credit {
-      margin-bottom: 10px;
+      margin: 50px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      /* body {
+        margin-left: 5%;
+      } */
+
+      .details,
+      .payment {
+        width: 90%;
+      }
+
+      input,
+      textarea,
+      select {
+        width: 100%;
+        text-align: center;
+      }
+
+      h3,
+      h1 {
+        text-align: center;
+      }
+
+      input[type="submit"] {
+        height: 35px;
+        width: 80%;
+        background-color: rgb(253, 253, 253);
+        border: hidden;
+        border-radius: 6px;
+        font-weight: bold;
+      }
     }
   </style>
   <title>Payment Form</title>
